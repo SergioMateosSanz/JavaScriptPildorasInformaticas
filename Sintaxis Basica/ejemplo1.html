@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hola Alumnos</title>
+  <link href="css/micss.css" rel="stylesheet">
+
+<!-- El navegador lee las páginas de arriba a abajo. Si el código JS va en el head
+  se ejecuta antes de cargar el contenido de la página web.
+  Los mensajes/ventanas alert detienen el flujo de ejecución.
+  Si utilizamos archivo externo, tiene la ventana de reutilización.
+  -->
+  <script>
+    alert("Hola Alumnos");
+  </script>
+  <script src="ejemplo1.js"></script>
+
+  <script src="Jquery/jquery-1.6.3.min.js"></script>
+  <script>
+    $(function(){
+      $("body").hide().fadeIn(3000);
+    });
+  </script>
+</head>
+
+<body>
+
+  <h1>
+    <script>
+      document.write("Hola Alumnos");
+    </script>
+  </h1>
+  <p>Bienvenidos al curso de JavaScript de <span>Píldoras Informáticas</span></p>
+  <img src="imgs/arbol.jpg" width="35%">
+
+</body>
+</html>

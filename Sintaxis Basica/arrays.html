@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Usando Arrays</title>
+	<link rel="stylesheet" href="css/micss3.css">
+	<script>
+		var articulos = ["zapatillas", "camiseta", "pantalón", "calcetines"];
+		//var articulos = new Array("zapatillas", "camiseta", "pantalón", "calcetines");
+	</script>
+</head>
+<body>
+	<div class="contenedor">
+  	<div class="header">
+    	<p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     	</p>
+  	</div>
+  	<div class="contenido">
+    	<div class="principal">
+      	<h1>Manejando Arrays</h1>
+      	<script>
+					document.write("El primer artículo es: " + "<strong>" + articulos[0] + "</strong>");
+					document.write("<p>El último elemento es: " + articulos[articulos.length-1]);
+					document.write("</p>");
+					articulos.unshift("Balón");
+					document.write("Ahora hemos añadido el artículo: " + "<strong>" + articulos[0] + "</strong><br/>");
+					articulos.push("Raqueta");
+					document.write("Ahora hemos añadido al final, el artículo: " + "<strong>" + articulos[articulos.length-1] + "</strong></br>");
+					articulos.push(prompt("Introduzca el artículo a añadir"));
+					document.write("Ahora hemos añadido al final, el artículo: " + "<strong>" + articulos[articulos.length-1] + "</strong>");
+					alert("El número total de artículos es: " + articulos.length);
+
+					document.write("<p>Listado de artículos</p>");
+					for (var i=0;i<articulos.length;i++){
+						document.write(articulos[i]+"<br/>");
+					}
+					alert("vamos a borrar el primer y último elemento");
+					articulos.shift();
+					articulos.pop();
+					document.write("<p>Nuevo listado de artículos</p>");
+					for (var j=0;j<articulos.length;j++){
+						document.write(articulos[j]+"<br/>");
+					}
+	  		</script>
+     	</div>
+  	</div>
+	</div>
+</body>
+</html>
