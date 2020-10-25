@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Uso Do While</title>
+
+    <script>
+        //FUNCIÓN QUE GENERA UN NÚMERO ALEATORIO ENTRE LOS 2 NÚMEROS QUE LES INDIQUEMOS, INCLUIDOS
+        function getRandomIntInclusive(min,max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); 
+            //The maximum is inclusive and the minimum is inclusive
+        }
+        //var aleatorio=Math.round(Math.random()*100);
+        var aleatorio=getRandomIntInclusive(1,10);
+        var intentos=0;
+        do{
+            var numero=prompt("Introduce un número entre 0 y 100");
+            if (numero<aleatorio){
+                alert("El número es mayor");
+            } else{
+                if (numero>aleatorio){
+                    alert("El número es menor");
+                }else{
+                    alert("correcto");
+                }
+            }
+            intentos++;
+        } while (numero!=aleatorio);
+
+    </script>
+</head>
+<body>
+    <h1>Has acertado en <script>document.write(intentos);</script> intentos</h1>
+
+</body>
+</html>

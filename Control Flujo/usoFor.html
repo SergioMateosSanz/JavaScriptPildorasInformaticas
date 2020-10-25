@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Uso For</title>
+
+    <script>
+        var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+        for (var i=0;i<meses.length;i++){
+            document.write(meses[i] + "<br/>");
+        }
+
+        var trabajadores=new Array();
+        var persona="";
+        var contador=0;
+
+        while (persona!="salir"){
+            persona=prompt("Introduce trabajador (salir para salir)");
+            trabajadores[contador]=persona;
+            contador++;
+        }
+        trabajadores.pop();//eliminar (y lo devolvería si lo queremos) el último elemento del array
+        for (j=0;j<trabajadores.length;j++){
+            document.write(trabajadores[j] + "<br/>");
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
