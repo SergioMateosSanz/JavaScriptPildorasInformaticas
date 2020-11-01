@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <script>
+            var numero1=parseInt(prompt("Introduce el primer número"));
+            var numero2=parseInt(prompt("Introduce el segundo número"));
+            function sumar(num1, num2){
+                document.write(num1+num2);
+            }
+            function restar(num1, num2){
+                document.write(num1-num2);
+            }
+            function multiplicar(num1, num2){
+                document.write(num1*num2);
+            }
+            function dividir(num1, num2){
+                document.write(num1/num2);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Calculadora</h1>
+        <p>La suma es: <script>sumar(numero1,numero2)</script></p>
+        <p>La resta es: <script>restar(numero1,numero2)</script></p>
+        <p>La multiplicación es: <script>multiplicar(numero1,numero2)</script></p>
+        <p>La división es: <script>dividir(numero1,numero2)</script></p>
+    </body>
+</html>

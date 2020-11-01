@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Primer ejemplo uso funciones</title>
+    <style type="text/css">
+        .centrado{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function diaDeHoy(){
+            var hoy=new Date();
+            document.write(hoy.toDateString());
+        }
+        function escribeNombre(nombre){
+            document.write(nombre);
+        }
+        var miNombre="Pepe";
+    </script>
+</head>
+<body>
+    <h1 class="centrado"><strong>¿Y qué día es hoy?</strong></h1>
+    <p>Hoy es día: <script>diaDeHoy();</script></p>
+    <p>Hola <script>escribeNombre(miNombre)</script></p>
+</body>
+</html>
