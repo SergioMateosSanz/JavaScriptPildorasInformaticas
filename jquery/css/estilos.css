@@ -1,0 +1,49 @@
+#banner {
+    background-color: crimson;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    font-size: 36px;
+    text-align: center;
+}
+
+img {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+}
+
+#imagen1 {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+}
+
+#imagen2 {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+}
+
+#imagen3 {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+}
+
+#imagen4 {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+}

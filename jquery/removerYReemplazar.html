@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover y reemplazar</title>
+
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            /*var z = document.getElementById("cerrar");
+            z.addEventListener("click",cerrarBanner,false);*/
+            document.getElementById("cerrar").addEventListener("click", cerrarBanner, false);
+            var imagenes = document.querySelectorAll("#carrete img");
+            for (var i = 0; i < imagenes.length; i++) {
+                imagenes[i].addEventListener("click", carrito, false);
+            }
+        });
+
+        function cerrarBanner() {
+            $("#banner").remove();
+        }
+
+        function carrito(num) {
+            if (num.target == imagen1) {
+                $("#imagen1").replaceWith("<div id='imagen1'>Agregado al carrito</div>");
+            }
+            if (num.target == imagen2) {
+                $("#imagen2").replaceWith("<div id='imagen2'>Agregado al carrito</div>");
+            }
+            if (num.target == imagen3) {
+                $("#imagen3").replaceWith("<div id='imagen3'>Agregado al carrito</div>");
+            }
+            if (num.target == imagen4) {
+                $("#imagen4").replaceWith("<div id='imagen4'>Agregado al carrito</div>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        Banner de prueba
+        <p id="cerrar">Cerrar</p>
+    </div>
+    <div id="carrete">
+        <img src="imgs/arbol.jpg" width="250" height="175" id="imagen1">
+        &nbsp;
+        <img src="imgs/vacas.jpg" width="250" height="175" id="imagen2">
+        &nbsp;
+        <img src="imgs/playa.jpg" width="250" height="175" id="imagen3">
+        &nbsp;
+        <img src="imgs/montanya.jpg" width="250" height="175" id="imagen4">
+    </div>
+
+</body>
+
+</html>

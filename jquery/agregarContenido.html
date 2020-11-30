@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .miContenedor {
+            background-color: chartreuse;
+        }
+    </style>
+
+    <title>Agregando contenido JQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#errores").html("<p>Hay errores en el formulario</p>");//sustituir texto y puede utilizar etiquetas html
+            $("#errores").append("<h5>texto después dentro del contenedor</h5>");//agregar texto a continuacion
+            $("#errores").prepend("<h3>texto antes dentro del contenedor</h3>");//agregar texto antes
+            $("#errores").before("<p>texto antes fuera del contenedor</p>");//agregar texto antes de dónde apuntamos
+            $("#errores").after("<p>texto después fuera del contenedor</p>");//agregar texto después de dónde apuntamos
+            $("#errores p").text("Cambio el texto");//sustituir texto, no maneja etiquetas html
+        });
+
+        function validar() {
+            var nombreUsuario = document.getElementById("usuario").value;
+            if (nombreUsuario == "") {
+                $("#usuario").after("Rellena este campo, por favor");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="errores" class="miContenedor">
+            <h2>Errores</h2>
+        </div>
+    </div>
+
+    <form action="" method="GET">
+        <input type="text" name="" id="usuario"></br>
+        <input type="text" name="" id="nombre"></br>
+        <input type="text" name="" id="apellido"></br>
+        <input type="button" value="Dale" onclick="validar()">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops automáticos con jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#carrete img").hide();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="carrete">
+        <img src="imgs/arbol.jpg" width="250" height="175">
+        &nbsp;
+        <img src="imgs/vacas.jpg" width="250" height="175">
+        &nbsp;
+        <img src="imgs/playa.jpg" width="250" height="175">
+        &nbsp;
+        <img src="imgs/montanya.jpg" width="250" height="175">
+    </div>
+
+    <!-- bucle con codigo javascript
+    <script>
+        var imagenes = document.querySelectorAll("#carrete img");
+        for (var i=0;i<imagenes.length;i++){
+            imagenes[i].style.visibility="hidden";
+        }
+    </script>
+    -->
+</body>
+
+</html>
