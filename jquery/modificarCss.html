@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando css</title>
+
+    <style>
+        #primerParrafo{
+            background-color: red;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var colorFondo = $("#primerParrafo").css("background-color");
+            alert(colorFondo);
+            $("#primerParrafo").css("background-color","#00F");
+            $("p.destacado").css("border","2px dotted blue");
+        });
+
+    </script>
+</head>
+<body>
+    <p id="primerParrafo">Primer párrafo</p>
+    <p class="destacado">Párrafo destacado</p>
+    <p>Tercer párrafo</p>
+</body>
+</html>
