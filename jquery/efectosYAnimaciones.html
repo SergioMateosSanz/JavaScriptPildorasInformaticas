@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/efectosYAnimaciones.css">
+
+	<<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#abierto").click(function(){
+				/*$("#login form").slideToggle(300);
+				$("#login form").fadeToggle(500);+*/
+				$("#login form").toggle(300);
+				$(this).toggleClass("cerrado");
+			});
+		});
+
+
+	</script>
+</head>
+
+<body>
+
+	<div class="cabecera">
+		<p class="logo">Píldoras informáticas<i></p>
+	</div>
+	<div id="login">
+		<p id="abierto">Login</p></i>
+		<form>
+			<p>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="usuario">
+			</p>
+			<p>
+				<label for="password">Password: </label>
+				<input type="password" name="password" id="contrasena">
+			</p>
+			<p>
+				<input type="submit" name="button" id="boton" value="Enviar">
+			</p>
+		</form>
+	</div>
+	<div class="contenido">
+		<div class="principal">
+			<h1>Login deslizante</h1>
+			<p>Haza clic en el botón de login</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
